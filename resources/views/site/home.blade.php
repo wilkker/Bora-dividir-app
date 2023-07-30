@@ -2,12 +2,14 @@
 
 @section('titulo', 'Título da Página')
 
+
+
 @section('conteudo')
     <br><br><br><br>
 
     <div class="row">
         <div class="col s12">
-            <a class="btn-floating waves-effect waves-light red tooltipped" title="Novo grupo" data-position="bottom" data-tooltip="Adicionar Novo Grupo" onclick="toggleInput()"><i class="material-icons">+</i></a>
+            <a class="btn-floating waves-effect waves-light red tooltipped animate__animated animate__pulse" title="Novo grupo" data-position="bottom" data-tooltip="Adicionar Novo Grupo" onclick="toggleInput()"><i class="material-icons">+</i></a>
         </div>
     </div>
 
@@ -41,14 +43,41 @@
         @endforeach
     </div>
 
+    <style>
+        #botaoNovoGrupo.animate__pulse {
+            animation: pulse 3s infinite; /* Aqui mudamos para 'infinite' para que a animação se repita continuamente */
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(2.0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+
     <script>
         function toggleInput() {
             var campoInput = document.getElementById('campoInput');
+            var botaoNovoGrupo = document.getElementById('botaoNovoGrupo');
             if (campoInput.style.display === "none") {
                 campoInput.style.display = "block";
+                botaoNovoGrupo.classList.add('animate__animated', 'animate__pulse');
+                botaoNovoGrupo.addEventListener('animationend', function () {
+                    botaoNovoGrupo.classList.remove('animate__animated', 'animate__pulse');
+                });
             } else {
                 campoInput.style.display = "none";
             }
         }
     </script>
+
+
+
+
 @endsection
