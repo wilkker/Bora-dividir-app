@@ -89,20 +89,23 @@
                 @csrf
                 <!-- Resto do formulário aqui -->
                 <div class="input-field">
-                    <input type="text" id="nome_membro" name="nome_membro" required>
-                    <label for="nome_membro">Nome do membro</label>
+                    <input type="text" id="nome_membro_1" name="nome_membro[]" required>
+                    <label for="nome_membro_1">Nome do membro 1</label>
                 </div>
-                <input name="grupo_id" value="{{$grupo->id}}" hidden>
-
                 <div id="novosMembros"></div>
-                <a href="#" class="btn" onclick="adicionarNovoCampo()">Adicionar mais um</a>
-
-
+                    <input type="hidden" name="grupo_id" value="{{ $grupo->id }}">
+                    <a href="#" class="btn" onclick="adicionarNovoCampo()">Adicionar mais um</a>
                 <button type="submit" class="btn">Salvar</button>
             </form>
         </div>
     </div>
 
+
+    {{-- DELETA grupo --}}
+    <form id="deleteForm" action="{{ route('grupo.delete', $grupo->id) }}" method="POST" style="display: none;">
+        @csrf
+        @method('DELETE')
+    </form>
 
     {{-- função m para adicionar mais de um membro --}}
     <script>
@@ -159,4 +162,3 @@
 
 
 @endsection
-
