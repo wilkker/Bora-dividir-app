@@ -16,7 +16,7 @@
             <div class="card">
                 <div class="card-content">
                     <span class="card-title">Anúncio 1</span>
-                    <p>Descrição do anúncio 1</p>
+                    <p>Descrição do Anúncio 1</p>
                 </div>
             </div>
         </div>
@@ -25,7 +25,7 @@
             <div class="card">
                 <div class="card-content">
                     <span class="card-title">Anúncio 2</span>
-                    <p>Descrição do anúncio 2</p>
+                    <p>Descrição do Anúncio 2</p>
                 </div>
             </div>
         </div>
@@ -34,7 +34,7 @@
             <div class="card">
                 <div class="card-content">
                     <span class="card-title">Anúncio 3</span>
-                    <p>Descrição do anúncio 3</p>
+                    <p>Descrição do Anúncio 3</p>
                 </div>
             </div>
         </div>
@@ -43,7 +43,7 @@
             <div class="card">
                 <div class="card-content">
                     <span class="card-title">Anúncio 4</span>
-                    <p>Descrição do anúncio 4</p>
+                    <p>Descrição do Anúncio 4</p>
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@
             <div class="card">
                 <div class="card-content">
                     <span class="card-title">Anúncio 5</span>
-                    <p>Descrição do anúncio 5</p>
+                    <p>Descrição do Anúncio 5</p>
                 </div>
             </div>
         </div>

@@ -17,7 +17,7 @@
         <div class="nav-wrapper">
             <div class="container">
                 <a href="/" class="brand-logo">Bora dividir</a>
-                <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">Menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{route('grupos.index')}}">Meus Grupos</a></li>
                 </ul>
